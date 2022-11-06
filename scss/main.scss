@@ -3,6 +3,9 @@
 @use './variables/colors' as *;
 // Import Colors
 // Image Galary Start Styling
+.body{
+    background: url(./../images/zara.png) center center no-repeat;
+}
 .product {
     display: flex;
     justify-content: space-between;
