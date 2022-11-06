@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-images">
+            <img src="./images/one.jpg" alt="img-1" onclick="imgChange(this)">
+            <img src="./images/two.jpg" alt="img-2" onclick="imgChange(this)">
+            <img src="./images/three.jpg" alt="img-3" onclick="imgChange(this)">
+            <img src="./images/four.jpg" alt="img-4" onclick="imgChange(this)">
+            <img src="./images/five.jpg" alt="img-5" onclick="imgChange(this)">
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="./images/one.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function imgChange(smallImg) {
+            let fullImg = document.getElementById("imageBox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+// Import Global rules
+@use './layout/global_roles';
+@use './variables/colors' as *;
+// Import Colors
+// Image Galary Start Styling
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(135deg, $glass_1, $glass_2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 10px 10px 0 rgb(179, 174, 174);
+    .product-small-images{
+        img {
+            height: 92px;
+            width: 75px;
+            margin: 10px;
+            cursor: pointer;
+            display: block;
+            opacity: 0.6;
+            border-radius: 3px;
+            box-shadow: 0 10px 10px 0 rgb(179, 174, 174);
+            transition: 0.5s;
+        }:hover {
+            opacity: 1;
+        }
+        
+    }
+    .img-container {
+        height: 500px;
+        img{
+            height: 500px;
+            width: 350px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px 0 rgb(179, 174, 174);
+            transition: 0.5s;
+            opacity: 0.9;
+        }:hover{
+            opacity: 1;
+        }
+    }
+}
